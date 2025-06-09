@@ -113,7 +113,25 @@
       z-index: -1;
       background: transparent;
     }
-  </style>
+   .top-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px; /* angoli arrotondati ma non cerchio */
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 1000;
+}
+</style>
 </head>
 <body>
 
@@ -123,6 +141,7 @@
     <p>MORSE ⇄ TESTO</p>
   </section>
 
+<a href="https://skeleadvyy.github.io/mybio/" class="top-button">></a>
   <section>
     <h2 class="section-title">Convertitore</h2>
     <div style="max-width: 700px; margin: auto;">
